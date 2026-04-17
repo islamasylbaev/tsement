@@ -4,17 +4,17 @@ import { Container } from "@/components/Container";
 
 export default function Contacts() {
     return (
-        <section className="pt-10 md:pt-20 pb-0 bg-white dark:bg-gray-900 overflow-hidden">
+        <section className="pt-10 md:pt-20 pb-0 bg-white  overflow-hidden">
             <Container>
 
-                <div className="bg-gray-200 dark:bg-gray-800 rounded-2xl shadow overflow-hidden">
+                <div className="bg-gray-200  rounded-2xl shadow overflow-hidden">
 
                     <div className="grid lg:grid-cols-3">
 
                         {/* LEFT INFO */}
                         <div className="p-8 space-y-6">
 
-                            <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+                            <h2 className="text-2xl font-bold text-gray-900 ">
                                 Наши адреса
                             </h2>
 
@@ -22,7 +22,7 @@ export default function Contacts() {
                                 <p className="text-gray-500 text-sm">Телефон</p>
                                 <a
                                     href="tel:+77089117554"
-                                    className="text-lg font-semibold text-gray-900 dark:text-white"
+                                    className="text-lg font-semibold text-gray-900 "
                                 >
                                     +7 708 911 75 54
                                 </a>
@@ -32,7 +32,7 @@ export default function Contacts() {
                                 <p className="text-gray-500 text-sm">Email</p>
                                 <a
                                     href="mailto:buy@tsementsnab.kz"
-                                    className="text-lg text-gray-900 dark:text-white"
+                                    className="text-lg text-gray-900 "
                                 >
                                     buy@tsementsnab.kz
                                 </a>
@@ -40,14 +40,14 @@ export default function Contacts() {
 
                             <div>
                                 <p className="text-gray-500 text-sm">Адрес цеха</p>
-                                <p className="text-gray-900 dark:text-white">
+                                <p className="text-gray-900 ">
                                     г. Астана, улица Ойыл, 3/1
                                 </p>
                             </div>
 
                             <div>
                                 <p className="text-gray-500 text-sm">Адрес офиса</p>
-                                <p className="text-gray-900 dark:text-white">
+                                <p className="text-gray-900 ">
                                     г. Астана, улица Шарль де Голль, 13
                                 </p>
                             </div>

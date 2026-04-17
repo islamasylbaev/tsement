@@ -1,6 +1,6 @@
 export default function ProductList({ items }: any) {
     return (
-        <div className="bg-white dark:bg-gray-800 rounded-xl p-6">
+        <div className="bg-white  rounded-xl p-6">
 
             <h2 className="text-xl font-bold mb-4">
                 Доступные размеры

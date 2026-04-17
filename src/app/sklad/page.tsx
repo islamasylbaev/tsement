@@ -24,12 +24,12 @@ export default function SkladPage() {
         }}
     />
     return (
-        <section className="bg-gray-100 dark:bg-gray-900 py-12">
+        <section className="bg-gray-100  py-12">
 
             <div className="max-w-[1536px] mx-auto px-4">
 
                 <div
-                    className="relative bg-white dark:bg-gray-800 rounded-2xl overflow-hidden flex flex-col lg:flex-row">
+                    className="relative bg-white  rounded-2xl overflow-hidden flex flex-col lg:flex-row">
 
                     {/* LEFT IMAGE */}
                     <div className="lg:w-1/2 relative min-h-[400px]">
@@ -42,13 +42,13 @@ export default function SkladPage() {
 
                         {/* overlay плавный */}
                         <div
-                            className="absolute inset-0 bg-gradient-to-r from-transparent to-white/80 dark:to-gray-800"></div>
+                            className="absolute inset-0 bg-gradient-to-r from-transparent to-white/80 "></div>
                     </div>
 
                     {/* RIGHT TEXT */}
                     <div className="lg:w-1/2 p-8 lg:p-12 flex flex-col justify-center relative z-10">
 
-                        <h1 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900 dark:text-white">
+                        <h1 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900 ">
                             ЖБИ склад в Астане — готовые решения для строительства
                         </h1>
                         <p className="text-gray-700 mb-6 max-w-3xl">
@@ -58,14 +58,14 @@ export default function SkladPage() {
                             Вы можете купить ЖБИ изделия со склада в Астане с быстрой отгрузкой
                             и доставкой на объект.
                         </p>
-                        <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
+                        <p className="text-gray-600 mb-4 leading-relaxed">
                             «Всё в одном месте — полный комплект ЖБИ для вашего склада».
                             Мы являемся производителем полного цикла: на нашем заводе
                             выпускаются все основные элементы для строительства складов
                             и производственных зданий — от ферм и прогонов до фасадных плит.
                         </p>
 
-                        <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                        <p className="text-gray-600 leading-relaxed">
                             Такой подход экономит время и средства заказчика: не нужно
                             координировать нескольких поставщиков, все компоненты совместимы
                             и соответствуют единым стандартам качества. Мы контролируем весь
@@ -103,11 +103,11 @@ export default function SkladPage() {
                     {/* TEXT */}
                     <div>
 
-                        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900 dark:text-white">
+                        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900 ">
                             Продукция нашего завода
                         </h2>
 
-                        <div className="space-y-3 text-gray-600 dark:text-gray-300 leading-relaxed text-sm">
+                        <div className="space-y-3 text-gray-600 leading-relaxed text-sm">
 
                             <p><b>1. Балка прогона</b> — продольный горизонтальный элемент крыши, поддерживает
                                 стропила и кровлю.</p>
@@ -148,30 +148,30 @@ export default function SkladPage() {
             <div className="max-w-[1536px] mx-auto px-4">
 
                 <div
-                    className="bg-white mt-5 dark:bg-gray-800 rounded-2xl p-8 lg:p-12 flex flex-col lg:flex-row items-center gap-10">
+                    className="bg-white mt-5  rounded-2xl p-8 lg:p-12 flex flex-col lg:flex-row items-center gap-10">
 
                     {/* TEXT */}
                     <div className="lg:w-1/2">
 
-                        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900 dark:text-white">
+                        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900 ">
                             Готовые ЖБИ решения
                         </h2>
 
-                        <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
+                        <p className="text-gray-600 leading-relaxed mb-4">
                             Готовые железобетонные решения — собери здание, как конструктор.
                             Фермы, колонны, ригели и перекрытия уже готовы к установке —
                             просто доставьте, соберите и используйте.
                         </p>
 
-                        <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
+                        <p className="text-gray-600 leading-relaxed mb-4">
                             Монтаж занимает считанные дни и максимально надежен.
-                            <span className="font-semibold text-gray-900 dark:text-white">
+                            <span className="font-semibold text-gray-900 ">
             {" "}Гарантия до 50 лет
           </span>{" "}
                             — никаких сварочных работ, всё соединяется болтовыми узлами.
                         </p>
 
-                        <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                        <p className="text-gray-600 leading-relaxed">
                             Так вы получаете надёжное промышленное помещение без
                             затягивания сроков и лишних расходов.
                         </p>
@@ -196,7 +196,7 @@ export default function SkladPage() {
             <div className="max-w-[1536px] mx-auto px-4">
 
                 <div
-                    className="bg-white mt-5 relative rounded-2xl overflow-hidden flex flex-col lg:flex-row bg-gray-100 dark:bg-gray-900">
+                    className="bg-white mt-5 relative rounded-2xl overflow-hidden flex flex-col lg:flex-row bg-gray-100 ">
 
                     {/* IMAGE */}
                     <div className="lg:w-1/2 relative min-h-[600px]">
@@ -211,24 +211,24 @@ export default function SkladPage() {
                     {/* TEXT */}
                     <div className="lg:w-1/2 p-8 lg:p-12 flex flex-col justify-center relative z-10">
 
-                        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900 dark:text-white">
+                        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900 ">
                             Линейка ферм
                             <br/>
                             фермы от 14м до 24м
                         </h2>
 
-                        <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
+                        <p className="text-gray-600 mb-4 leading-relaxed">
                             Мы разработали 10 видов железобетонных ферм длиной от 14 м до 24 м,
                             чтобы обеспечить оптимальное решение для склада любого масштаба.
                         </p>
 
-                        <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
+                        <p className="text-gray-600 mb-4 leading-relaxed">
                             Наша технология позволяет перекрывать пролёты до 24 м,
                             создавая конструкцию, способную выдерживать высокие нагрузки
                             при длительном пролёте.
                         </p>
 
-                        <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                        <p className="text-gray-600 leading-relaxed">
                             Это значит, что наши фермы позволяют планировать пространство гибко:
                             вы можете уменьшить количество колонн или увеличить полезную площадь.
                         </p>
@@ -251,17 +251,17 @@ export default function SkladPage() {
                     </div>
 
                     {/* TABLE */}
-                    <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 lg:p-8">
+                    <div className="bg-white  rounded-2xl p-6 lg:p-8">
 
-                        <h2 className="text-2xl md:text-3xl font-bold mb-6 text-gray-900 dark:text-white">
+                        <h2 className="text-2xl md:text-3xl font-bold mb-6 text-gray-900 ">
                             Подбор длины фермы
                         </h2>
 
-                        <div className="space-y-6 text-sm text-gray-600 dark:text-gray-300">
+                        <div className="space-y-6 text-sm text-gray-600 ">
 
                             {/* 14-15 */}
                             <div>
-                                <p className="font-semibold text-gray-900 dark:text-white mb-1">
+                                <p className="font-semibold text-gray-900  mb-1">
                                     14–15 м
                                 </p>
                                 <p>
@@ -272,7 +272,7 @@ export default function SkladPage() {
 
                             {/* 16-18 */}
                             <div>
-                                <p className="font-semibold text-gray-900 dark:text-white mb-1">
+                                <p className="font-semibold text-gray-900  mb-1">
                                     16–18 м
                                 </p>
                                 <p>
@@ -284,7 +284,7 @@ export default function SkladPage() {
 
                             {/* 19-20 */}
                             <div>
-                                <p className="font-semibold text-gray-900 dark:text-white mb-1">
+                                <p className="font-semibold text-gray-900  mb-1">
                                     19–20 м
                                 </p>
                                 <p>
@@ -296,7 +296,7 @@ export default function SkladPage() {
 
                             {/* 21-24 */}
                             <div>
-                                <p className="font-semibold text-gray-900 dark:text-white mb-1">
+                                <p className="font-semibold text-gray-900  mb-1">
                                     21–24 м
                                 </p>
                                 <p>
@@ -333,7 +333,7 @@ export default function SkladPage() {
                     </div>
 
                     {/* TEXT */}
-                    <div className="relative bg-gray-100 dark:bg-gray-800 rounded-2xl p-6 lg:p-10 overflow-hidden">
+                    <div className="relative bg-gray-100  rounded-2xl p-6 lg:p-10 overflow-hidden">
 
                         {/* декоративные линии */}
                         <div
@@ -341,11 +341,11 @@ export default function SkladPage() {
                         <div
                             className="absolute bottom-0 right-0 w-40 h-6 bg-orange-300 rotate-45 translate-x-16 translate-y-6"></div>
 
-                        <h2 className="text-2xl md:text-3xl font-bold mb-4 text-gray-900 dark:text-white">
+                        <h2 className="text-2xl md:text-3xl font-bold mb-4 text-gray-900 ">
                             Балка прогона 6м, 8м
                         </h2>
 
-                        <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-sm md:text-base">
+                        <p className="text-gray-600 leading-relaxed text-sm md:text-base">
                             Балка прогона - продольный горизонтальный элемент крыши, который поддерживает стропила и
                             закрепляет кровельную обрешётку.
                             Сверху можно закрыть проф настилом, сэндвич панелями.
@@ -376,7 +376,7 @@ export default function SkladPage() {
                     </div>
 
                     {/* TEXT */}
-                    <div className="relative bg-gray-100 dark:bg-gray-800 rounded-2xl p-6 lg:p-10 overflow-hidden">
+                    <div className="relative bg-gray-100  rounded-2xl p-6 lg:p-10 overflow-hidden">
 
                         {/* декоративные линии */}
                         <div
@@ -384,11 +384,11 @@ export default function SkladPage() {
                         <div
                             className="absolute bottom-0 right-0 w-40 h-6 bg-orange-300 rotate-45 translate-x-16 translate-y-6"></div>
 
-                        <h2 className="text-2xl md:text-3xl font-bold mb-4 text-gray-900 dark:text-white">
+                        <h2 className="text-2xl md:text-3xl font-bold mb-4 text-gray-900 ">
                             Подкрановый ригель 6м, 8м
                         </h2>
 
-                        <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-sm md:text-base">
+                        <p className="text-gray-600 leading-relaxed text-sm md:text-base">
                             Подкрановый ригель — специально спроектированный горизонтальный элемент, образующий путь для
                             мостового или подвесного крана.
                             Это балка, на которую устанавливается «рельс», она несёт вес крана и груза и выдерживает
@@ -410,13 +410,13 @@ export default function SkladPage() {
             <div className="max-w-[1536px] mx-auto px-4 mt-16">
 
                 {/* TITLE */}
-                <h2 className="text-3xl md:text-4xl font-bold mb-8 text-gray-900 dark:text-white">
+                <h2 className="text-3xl md:text-4xl font-bold mb-8 text-gray-900 ">
                     Преимущества
                 </h2>
 
                 {/* LIST */}
                 <div
-                    className="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm md:text-base text-gray-600 dark:text-gray-300">
+                    className="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm md:text-base text-gray-600 ">
 
                     <div className="space-y-4">
                         <p><b>1.</b> Гарантия на десятилетия. Каждое изделие покрыто 50-летней гарантией.</p>

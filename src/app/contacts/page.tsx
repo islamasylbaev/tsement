@@ -1,6 +1,6 @@
 export default function ContactsPage() {
     return (
-        <div className="bg-gray-100 dark:bg-gray-900 min-h-screen">
+        <div className="bg-gray-100  min-h-screen">
 
             {/* MAP */}
             <div className="w-full h-[400px] lg:h-[500px]">
@@ -16,11 +16,11 @@ export default function ContactsPage() {
             {/* CONTENT */}
             <div className="max-w-[1536px] mx-auto px-4 py-12">
 
-                <h1 className="text-3xl font-bold mb-8 text-gray-900 dark:text-white">
+                <h1 className="text-3xl font-bold mb-8 text-gray-900 ">
                     Контакты
                 </h1>
 
-                <div className="space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed">
+                <div className="space-y-4 text-gray-700 leading-relaxed">
 
                     <p>
                         <strong>Компания:</strong> ТОО «Цемент-Снаб НС»

@@ -22,7 +22,7 @@ const images = [
 
 export default function ProjectsBlock() {
     return (
-        <section className="py-20 bg-white dark:bg-gray-900">
+        <section className="py-20 bg-white">
 
             <div className="max-w-[1536px] mx-auto px-4">
 

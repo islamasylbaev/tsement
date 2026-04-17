@@ -7,7 +7,7 @@ import {FaWhatsapp} from "react-icons/fa";
 
 export const Navbar = () => {
     return (
-        <div className="w-full bg-white dark:bg-gray-900 border-b">
+        <div className="w-full bg-white  border-b">
             <nav className="relative z-50 max-w-[1536px] mx-auto flex items-center justify-between p-6">
 
                 {/* LOGO */}
@@ -18,7 +18,7 @@ export const Navbar = () => {
                         height={40}
                         alt="ЦементСнаб"
                     />
-                    <span className="text-sm sm:text-base md:text-xl font-bold text-gray-800 dark:text-white">
+                    <span className="text-sm sm:text-base md:text-xl font-bold text-gray-800 ">
     ЦементСнаб
 </span>
                 </Link>
@@ -42,7 +42,7 @@ export const Navbar = () => {
                             </span>
                         </button>
 
-                        <div className="absolute top-full left-0 mt-2 w-52 bg-white dark:bg-gray-800 shadow-xl rounded-lg p-3
+                        <div className="absolute top-full left-0 mt-2 w-52 bg-white  shadow-xl rounded-lg p-3
                                         opacity-0 invisible translate-y-2
                                         group-hover:opacity-100 group-hover:visible group-hover:translate-y-0
                                         transition-all duration-200 z-50">
@@ -119,7 +119,7 @@ export const Navbar = () => {
 
                             {/* SIDEBAR */}
                             <Disclosure.Panel
-                                className={`fixed top-0 right-0 h-full w-[280px] bg-white dark:bg-gray-900 z-50 shadow-xl
+                                className={`fixed top-0 right-0 h-full w-[280px] bg-white  z-50 shadow-xl
                 transform transition-transform duration-300
                 ${open ? "translate-x-0" : "translate-x-full"}`}
                             >

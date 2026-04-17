@@ -29,10 +29,10 @@ export default function About() {
     };
 
     return (
-        <section className="pt-10 md:pt-20 pb-0 bg-white dark:bg-gray-900 overflow-hidden">
+        <section className="pt-10 md:pt-20 pb-0 bg-white  overflow-hidden">
             <Container>
 
-                <div className="bg-blue-100 dark:bg-gray-800 rounded-2xl p-8 shadow">
+                <div className="bg-blue-100  rounded-2xl p-8 shadow">
 
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
 
@@ -80,22 +80,22 @@ export default function About() {
                         {/* TEXT */}
                         <div>
 
-                            <h2 className="text-2xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
+                            <h2 className="text-2xl md:text-4xl font-bold mb-4 text-gray-900 ">
                                 ЖБИ изделия в Астане — Цемент-Снаб НС
                             </h2>
 
-                            <p className="text-s text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
+                            <p className="text-s text-gray-600 mb-4 leading-relaxed">
                                 Компания ТОО «Цемент-Снаб НС» производит и поставляет железобетонные изделия (ЖБИ)
                                 высокого качества. В нашем ассортименте: сваи, перемычки, прогоны, лестничные площадки и
                                 марши, кольца, крышки, днища, лотки и элементы снегозадержания.
                             </p>
 
-                            <p className="text-s text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
+                            <p className="text-s text-gray-600 mb-4 leading-relaxed">
                                 Мы работаем по стандартам ГОСТ и обеспечиваем доставку по Астане и регионам Казахстана.
                                 Выполняем как стандартные заказы, так и индивидуальное производство под задачи клиента.
                             </p>
 
-                            <p className="text-s text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                            <p className="text-s text-gray-600 mb-6 leading-relaxed">
                                 Благодаря собственному производству бетона, строгому контролю качества и соблюдению
                                 сроков, наша продукция востребована среди частных заказчиков, строительных компаний и
                                 крупных подрядчиков.
@@ -115,7 +115,7 @@ export default function About() {
 
                                 <a
                                     href="/catalog"
-                                    className="text-s border border-gray-300 px-6 py-3 rounded-lg bg-orange-100 hover:bg-gray-200 dark:hover:bg-gray-700 transition"
+                                    className="text-s border border-gray-300 px-6 py-3 rounded-lg bg-orange-100 hover:bg-gray-200  transition"
                                 >
                                     Смотреть каталог
                                 </a>

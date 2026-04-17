@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { ThemeProvider } from "next-themes";
 import "./globals.css";
 
 import { Navbar } from "@/components/Navbar";
@@ -58,12 +57,6 @@ export default function RootLayout({
           }),
         }}
     />
-    <ThemeProvider attribute="class">
-      <Navbar/>
-      <div>{children}</div>
-      <Footer/>
-      <PopupWidget/>
-    </ThemeProvider>
     </body>
     </html>
   );

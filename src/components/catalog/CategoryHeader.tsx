@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function CategoryHeader({ category }: any) {
     return (
-        <div className="bg-white dark:bg-gray-800 rounded-xl p-6 flex gap-6 mb-6">
+        <div className="bg-white  rounded-xl p-6 flex gap-6 mb-6">
 
             {/* IMAGE */}
             <div className="relative w-32 h-32">
@@ -21,7 +21,7 @@ export default function CategoryHeader({ category }: any) {
                     {category.name}
                 </h1>
 
-                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                <p className="text-gray-600 mb-4">
                     {category.description}
                 </p>
 
@@ -38,7 +38,7 @@ export default function CategoryHeader({ category }: any) {
 
                     <a
                         href="tel:+77089117554"
-                        className="border px-6 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
+                        className="border px-6 py-3 rounded-lg hover:bg-gray-100 "
                     >
                         Позвонить
                     </a>

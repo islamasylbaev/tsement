@@ -25,7 +25,7 @@ export function Benefits({
                              imgPos = "left",
                          }: BenefitsProps) {
     return (
-        <section className="py-20 bg-white dark:bg-gray-900">
+        <section className="py-20 bg-white ">
             <Container>
 
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -45,11 +45,11 @@ export function Benefits({
                     {/* TEXT */}
                     <div className={imgPos === "right" ? "lg:order-1" : ""}>
 
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900  mb-4">
                             {title}
                         </h2>
 
-                        <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
+                        <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                             {desc}
                         </p>
 
@@ -64,10 +64,10 @@ export function Benefits({
 
                                     {/* TEXT */}
                                     <div>
-                                        <h4 className="font-semibold text-gray-900 dark:text-white">
+                                        <h4 className="font-semibold text-gray-900 ">
                                             {item.title}
                                         </h4>
-                                        <p className="text-gray-600 dark:text-gray-400">
+                                        <p className="text-gray-600 ">
                                             {item.desc}
                                         </p>
                                     </div>

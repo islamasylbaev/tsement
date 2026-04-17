@@ -22,7 +22,7 @@ export default function AboutPage() {
 
     return (
         <AboutLayout>
-        <div className="bg-gray-100 dark:bg-gray-900 min-h-screen">
+        <div className="bg-gray-100  min-h-screen">
             <div className="max-w-[1536px] mx-auto px-4 flex gap-6">
 
                 <div className="flex-1 flex flex-col gap-6">
@@ -49,9 +49,9 @@ export default function AboutPage() {
                     </div>
 
                     {/* TEXT */}
-                    <div className="bg-white dark:bg-gray-800 rounded-xl p-6 border text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <div className="bg-white  rounded-xl p-6 border text-gray-700 leading-relaxed">
 
-                        <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+                        <h2 className="text-2xl font-bold mb-4 text-gray-900 ">
                             Цемент-Снаб НС
                         </h2>
 
