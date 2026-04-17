@@ -1,104 +1,183 @@
 "use client";
+
 import Link from "next/link";
-import ThemeChanger from "./DarkSwitch";
-import Image from "next/image"
-import { Disclosure } from "@headlessui/react";
+import Image from "next/image";
+import {Disclosure} from "@headlessui/react";
+import {FaWhatsapp} from "react-icons/fa";
 
 export const Navbar = () => {
-  const navigation = [
-    "Product",
-    "Features",
-    "Pricing",
-    "Company",
-    "Blog",
-  ];
+    return (
+        <div className="w-full bg-white dark:bg-gray-900 border-b">
+            <nav className="relative z-50 max-w-[1536px] mx-auto flex items-center justify-between p-6">
 
-  return (
-    <div className="w-full">
-      <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto lg:justify-between xl:px-1">
-        {/* Logo  */}
-        <Link href="/">
-          <span className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
-              <span>
-                <Image
-                  src="/img/logo.svg"
-                  width="32"
-                  alt="N"
-                  height="32"
-                  className="w-8"
-                />
-              </span>
-            <span>Nextly</span>
-          </span>
-        </Link>
-
-        {/* get started  */}
-        <div className="gap-3 nav__item mr-2 lg:flex ml-auto lg:ml-0 lg:order-2">
-            <ThemeChanger />
-            <div className="hidden mr-3 lg:flex nav__item">
-              <Link href="/" className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5">
-                Get Started
-              </Link>
-            </div>
-        </div>
-                
-        <Disclosure>
-          {({ open }) => (
-            <>
-                <Disclosure.Button
-                  aria-label="Toggle Menu"
-                  className="px-2 py-1 text-gray-500 rounded-md lg:hidden hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:text-gray-300 dark:focus:bg-trueGray-700">
-                  <svg
-                    className="w-6 h-6 fill-current"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24">
-                    {open && (
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
-                      />
-                    )}
-                    {!open && (
-                      <path
-                        fillRule="evenodd"
-                        d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
-                      />
-                    )}
-                  </svg>
-                </Disclosure.Button>
-
-                <Disclosure.Panel className="flex flex-wrap w-full my-5 lg:hidden">
-                  <>
-                    {navigation.map((item, index) => (
-                      <Link key={index} href="/" className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none">
-                          {item}
-                      </Link>
-                    ))}
-                    <Link href="/" className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5">         
-                        Get Started
-                    </Link>
-                  </>
-                </Disclosure.Panel>
-            </>
-          )}
-        </Disclosure>
-        
-        {/* menu  */}
-        <div className="hidden text-center lg:flex lg:items-center">
-          <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex">
-            {navigation.map((menu, index) => (
-              <li className="mr-3 nav__item" key={index}>
-                <Link href="/" className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800">
-                    {menu}
+                {/* LOGO */}
+                <Link href="/" className="flex items-center space-x-2 z-10">
+                    <Image
+                        src="/img/logo.png"
+                        width={40}
+                        height={40}
+                        alt="ЦементСнаб"
+                    />
+                    <span className="text-sm sm:text-base md:text-xl font-bold text-gray-800 dark:text-white">
+    ЦементСнаб
+</span>
                 </Link>
-              </li>
-            ))}
-          </ul>
+
+                {/* CENTER MENU */}
+                <div className="hidden lg:flex items-center gap-8 absolute left-1/2 -translate-x-1/2 z-40">
+                    <Link href="/" className="hover:text-orange-500 transition">
+                        Главная
+                    </Link>
+                    <Link href="/catalog" className="hover:text-orange-500 transition">
+                        Каталог товаров
+                    </Link>
+
+                    {/* DROPDOWN */}
+                    <div className="relative group">
+
+                        <button className="flex items-center gap-1 hover:text-orange-500 transition">
+                            О нас
+                            <span className="text-xs transition group-hover:rotate-180">
+                                ▼
+                            </span>
+                        </button>
+
+                        <div className="absolute top-full left-0 mt-2 w-52 bg-white dark:bg-gray-800 shadow-xl rounded-lg p-3
+                                        opacity-0 invisible translate-y-2
+                                        group-hover:opacity-100 group-hover:visible group-hover:translate-y-0
+                                        transition-all duration-200 z-50">
+
+                            <Link href="/about" className="block py-2 hover:text-orange-500">
+                                О компании
+                            </Link>
+
+                            <Link href="/about/licenses" className="block py-2 hover:text-orange-500">
+                                Лицензии
+                            </Link>
+                            <Link href="/about/delivery" className="block py-2 hover:text-orange-500">
+                                Доставка
+                            </Link>
+
+                        </div>
+                    </div>
+
+                    <Link href="/sklad" className="hover:text-orange-500 transition">
+                        Склад
+                    </Link>
+
+                    <Link href="/contacts" className="hover:text-orange-500 transition">
+                        Контакты
+                    </Link>
+                </div>
+
+                {/* RIGHT SIDE */}
+                <div className="flex items-center gap-4 ml-auto z-10">
+
+                    <a href="tel:+77089117554" className="hidden md:block font-semibold">
+                        +7 708 911 75 54
+                    </a>
+
+                    <a
+                        href="https://wa.me/77089117554"
+                        target="_blank"
+                        className="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-3 py-1.5 text-sm rounded-lg"
+                    >
+                        <FaWhatsapp className="w-5 h-5 shrink-0"/>
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+
+                {/* MOBILE MENU */}
+                <Disclosure>
+                    {({open, close}) => (
+                        <>
+                            {/* BUTTON */}
+                            <Disclosure.Button className="lg:hidden ml-4 z-50 relative">
+                                <svg
+                                    className="w-6 h-6"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    {open ? (
+                                        <path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
+                                              d="M6 18L18 6M6 6l12 12"/>
+                                    ) : (
+                                        <path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
+                                              d="M4 6h16M4 12h16M4 18h16"/>
+                                    )}
+                                </svg>
+                            </Disclosure.Button>
+
+                            {/* OVERLAY */}
+                            {open && (
+                                <div
+                                    className="fixed inset-0 bg-black/40 z-40"
+                                    onClick={() => close()}
+                                />
+                            )}
+
+                            {/* SIDEBAR */}
+                            <Disclosure.Panel
+                                className={`fixed top-0 right-0 h-full w-[280px] bg-white dark:bg-gray-900 z-50 shadow-xl
+                transform transition-transform duration-300
+                ${open ? "translate-x-0" : "translate-x-full"}`}
+                            >
+                                {/* HEADER */}
+                                <div className="flex items-center justify-between p-4 border-b">
+                                    <span className="font-semibold text-sm">Меню</span>
+                                    <button onClick={() => close()}>✕</button>
+                                </div>
+
+                                {/* LINKS */}
+                                <div className="flex flex-col text-sm">
+                                    <Link href="/" onClick={() => close()} className="px-4 py-3 border-b hover:bg-gray-100">
+                                        Главная
+                                    </Link>
+
+                                    <Link href="/catalog" onClick={() => close()}
+                                          className="px-4 py-3 border-b hover:bg-gray-100">
+                                        Каталог
+                                    </Link>
+
+                                    <div className="border-b">
+                                        <p className="px-4 py-3 font-semibold text-xs text-gray-500">
+                                            О нас
+                                        </p>
+
+                                        <Link href="/about" onClick={() => close()}
+                                              className="block px-6 py-2 text-sm hover:bg-gray-100">
+                                            О компании
+                                        </Link>
+
+                                        <Link href="/about/licenses" onClick={() => close()}
+                                              className="block px-6 py-2 text-sm hover:bg-gray-100">
+                                            Лицензии
+                                        </Link>
+
+                                        <Link href="/about/delivery" onClick={() => close()}
+                                              className="block px-6 py-2 text-sm hover:bg-gray-100">
+                                            Доставка
+                                        </Link>
+                                    </div>
+
+                                    <Link href="/sklad" onClick={() => close()}
+                                          className="px-4 py-3 border-b hover:bg-gray-100">
+                                        Склад
+                                    </Link>
+
+                                    <Link href="/contacts" onClick={() => close()}
+                                          className="px-4 py-3 border-b hover:bg-gray-100">
+                                        Контакты
+                                    </Link>
+
+                                </div>
+                            </Disclosure.Panel>
+                        </>
+                    )}
+                </Disclosure>
+
+            </nav>
         </div>
-
-      </nav>
-    </div>
-  );
-}
-
+    );
+};
