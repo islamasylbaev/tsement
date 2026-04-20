@@ -76,7 +76,7 @@ export function Footer() {
                 <div className="flex items-start gap-2">
                   <MapPin className="w-4 h-4 text-orange-500 mt-1" />
                   <p>
-                    г. Астана, ул. Ойыл, 3/1
+                    г. Астана, 85-я улица, 9/1
                   </p>
                 </div>
 

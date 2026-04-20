@@ -48,6 +48,7 @@ export default function Products() {
                                     src={item.image}
                                     alt={item.name}
                                     fill
+                                    loading="lazy"
                                     className="object-contain group-hover:scale-105 transition duration-300"
                                 />
                             </div>

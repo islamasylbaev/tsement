@@ -54,6 +54,7 @@ export default function ProjectsBlock() {
                                         src={src}
                                         alt="project"
                                         fill
+                                        loading="lazy"
                                         className="object-cover object-center"
                                     />
                                 </div>

@@ -5,7 +5,7 @@ export default function ContactsPage() {
             {/* MAP */}
             <div className="w-full h-[400px] lg:h-[500px]">
                 <iframe
-                    src="https://makemap.2gis.ru/widget?data=eJy1j81OwzAQhN9luVqVvbWdH4kTohUgocIFAeohxAu15MSR40qUKO-O3dInQN3jzO7MtxP4YCiQWZPvKAZLI9TvE8TDQFDDipq4DwQMhuAHCvHoT9B650PyrziW4hOTH210-YLfF8-7xxvJX2-vk2xobIMdovV9MpPwc9cb-oZa8PPMDL5O5Ycc_de88baPab_1CdD2TTyCFWIhlcZSMSUWQkrOcZvurYG6UMXM_gP-8PEUzXp1GWhZodQZGjnKSpyhK1XOWwZdM2z8aE-FE7gmQp0fVIhCl1yi1korBi77Oa7QSy3FUhUSMeF53yU4TKEJ3Dv3siNyb0c1hj3Nv4bQkrA"
+                    src="https://makemap.2gis.ru/widget?data=eJy1js1OwzAQhN9luVqV7cQ_jcQJ0QqQUOGCAPUQ4oVacuLIdSVKlHdnkwIvgLqXlWZ2Z74BYnKY0K0xtpiTxz1UrwPkY49QwQrrfEgIDPoUe0x59gdoYoiJ_AsurXiX5Gefw_TB794esluvSHK4b5Lvs48dGSR83XQOP6ES_HdGBh-n4uMU-9O6ib7LdN9EgvNdnWcoIxZlIQxTYiG5ltpu6ds7qJZSjew_yLfmcXd_VfLn68vzYCstrZrARVlyLv_ArRy3DNq638S9PxUOEOoM1XyrhdVqaU1haTMIk09xSkijdFEaTbma-GJsiU5QKpHHEJ52iOFlVnM64PgNj6KSlg"
                     width="100%"
                     height="100%"
                     loading="lazy"
@@ -41,7 +41,7 @@ export default function ContactsPage() {
                     </p>
 
                     <p>
-                        <strong>Адрес цеха:</strong> г. Астана, улица Ойыл, 3/1
+                        <strong>Адрес цеха:</strong> г. Астана, 85-я улица, 9/1
                     </p>
 
                     <p>

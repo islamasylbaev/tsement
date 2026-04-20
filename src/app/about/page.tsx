@@ -31,6 +31,7 @@ export default function AboutPage() {
                             src={images[current]}
                             alt="factory"
                             fill
+                            loading="lazy"
                             className="object-cover"
                         />
                         <button

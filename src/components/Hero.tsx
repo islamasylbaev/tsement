@@ -43,6 +43,7 @@ export const Hero = () => {
                             src="/img/sklad/main.jpg"
                             alt="ЖБИ склад"
                             fill
+                            priority
                             className="object-cover group-hover:scale-105 transition duration-500"
                         />
 
@@ -81,23 +82,16 @@ export const Hero = () => {
                     </div>
 
                 </div>
-
-                {/* FEATURES BLOCK */}
                 <div className="mt-6 md:mt-5 relative rounded-2xl overflow-hidden">
-
-                    {/* BACKGROUND IMAGE */}
                     <div className="absolute inset-0">
                         <img
-                            src="/img/1.jpg" // 👈 сюда свою картинку
+                            src="/img/1.jpg"
                             alt="background"
                             className="w-full h-full object-cover "
+                            loading="lazy"
                         />
                     </div>
-
-                    {/* OVERLAY (серый сверху) */}
                     <div className="absolute inset-0 backdrop-blur-sm bg-black/40"/>
-
-                    {/* CONTENT */}
                     <div className="relative p-4 md:p-6">
 
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 text-center">
@@ -155,6 +149,7 @@ function HeroCard({
                 alt={title}
                 fill
                 className="object-cover group-hover:scale-110 transition duration-500"
+                loading="lazy"
             />
 
             <div className="absolute inset-0 bg-black/55 p-3 md:p-4 flex flex-col justify-end">

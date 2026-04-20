@@ -37,6 +37,7 @@ export function Benefits({
                             alt="benefits"
                             width={700}
                             height={500}
+                            loading="lazy"
                             className="w-full h-auto object-cover rounded-xl"
                             priority
                         />

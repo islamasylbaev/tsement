@@ -71,7 +71,7 @@ export const products = [
     {
         slug: "marshi",
         name: "Лестничные марши",
-        shortName: "Марши",
+        shortName: "Лестничные марши",
         image: "/img/products/marshi.png",
         description: `
 Лестничные марши ЖБИ в Астане для строительства зданий. 
@@ -84,7 +84,7 @@ export const products = [
     {
         slug: "ploshadki",
         name: "Лестничные площадки",
-        shortName: "Площадки",
+        shortName: "Лестничные площадки",
         image: "/img/products/lestnica.png",
         description: `
 Лестничные площадки ЖБИ в Астане используются совместно с маршами. 
@@ -149,7 +149,7 @@ export const products = [
     {
         slug: "stolby",
         name: "Столбы (опоры)",
-        shortName: "Столбы",
+        shortName: "Столбы (опоры)",
         image: "/img/products/stolb.png",
         description: `
 Столбы и опоры ЖБИ в Астане применяются в строительстве и инфраструктуре. 
@@ -164,7 +164,7 @@ export const products = [
     {
         slug: "sneg",
         name: "Снегозадержание",
-        shortName: "Снег",
+        shortName: "Доска снегозадержания",
         image: "/img/products/sneg.png",
         description: `
 Системы снегозадержания в Астане для защиты зданий. 

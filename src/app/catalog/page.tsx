@@ -58,6 +58,7 @@ export default function CatalogPage() {
                                     src={item.image}
                                     alt={`${item.name} в Астане`}
                                     fill
+                                    loading="lazy"
                                     className="object-contain"
                                 />
                             </div>

@@ -61,6 +61,7 @@ export default function LicensesPage() {
                                 alt={item.title}
                                 width={220}
                                 height={300}
+                                loading="lazy"
                                 className="rounded-lg border object-contain"
                             />
                         </div>

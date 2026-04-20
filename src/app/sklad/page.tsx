@@ -37,6 +37,7 @@ export default function SkladPage() {
                             src="/img/sklad/main.jpg"
                             alt="ЖБИ склад"
                             fill
+                            loading="lazy"
                             className="object-cover"
                         />
 
@@ -96,6 +97,7 @@ export default function SkladPage() {
                             src="/img/sklad/schema.png"
                             alt="Продукция завода"
                             fill
+                            loading="lazy"
                             className="object-cover"
                         />
                     </div>
@@ -185,6 +187,7 @@ export default function SkladPage() {
                             src="/img/sklad/beam.png"
                             alt="ЖБИ конструкция"
                             fill
+                            loading="lazy"
                             className="object-contain"
                         />
 
@@ -204,6 +207,7 @@ export default function SkladPage() {
                             src="/img/sklad/ferma.png"
                             alt="Фермы ЖБИ"
                             fill
+                            loading="lazy"
                             className="object-contain p-6"
                         />
                     </div>
@@ -246,6 +250,7 @@ export default function SkladPage() {
                             src="/img/sklad/inside.jpg"
                             alt="Склад внутри"
                             fill
+                            loading="lazy"
                             className="object-cover"
                         />
                     </div>
@@ -328,6 +333,7 @@ export default function SkladPage() {
                             src="/img/sklad/balka.jpg"
                             alt="Балка прогона"
                             fill
+                            loading="lazy"
                             className="object-contain"
                         />
                     </div>
@@ -371,6 +377,7 @@ export default function SkladPage() {
                             src="/img/sklad/rigel.png"
                             alt="Подкрановый ригель"
                             fill
+                            loading="lazy"
                             className="object-contain"
                         />
                     </div>
@@ -447,6 +454,7 @@ export default function SkladPage() {
                             src="/img/sklad/adv1.jpg"
                             alt="Склад"
                             fill
+                            loading="lazy"
                             className="object-cover"
                         />
                     </div>
@@ -456,6 +464,7 @@ export default function SkladPage() {
                             src="/img/sklad/adv2.jpg"
                             alt="Стройка"
                             fill
+                            loading="lazy"
                             className="object-cover"
                         />
                     </div>

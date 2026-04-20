@@ -44,6 +44,7 @@ export default function About() {
                                     src={images[current]}
                                     alt="Завод"
                                     fill
+                                    loading="lazy"
                                     className="object-cover"
                                 />
                             </div>

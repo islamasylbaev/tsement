@@ -36,6 +36,7 @@ export default function DeliveryPage() {
                                     src="/img/delivery.png"
                                     alt="Доставка ЖБИ"
                                     fill
+                                    loading="lazy"
                                     className="object-cover"
                                 />
                             </div>

@@ -49,6 +49,7 @@ export default function Partners() {
                                         alt={item.name}
                                         width={140}
                                         height={60}
+                                        loading="lazy"
                                         className="object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-300"
                                     />
                                 </div>
@@ -71,6 +72,7 @@ export default function Partners() {
                                         alt={item.name}
                                         width={140}
                                         height={60}
+                                        loading="lazy"
                                         className="object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition duration-300"
                                     />
                                 </div>

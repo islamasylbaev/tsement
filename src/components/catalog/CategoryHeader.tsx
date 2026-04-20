@@ -10,6 +10,7 @@ export default function CategoryHeader({ category }: any) {
                     src={category.image}
                     alt={category.name}
                     fill
+                    loading="lazy"
                     className="object-contain"
                 />
             </div>

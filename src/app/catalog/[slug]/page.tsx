@@ -93,6 +93,7 @@ export default function Page({ params }: any) {
                             src={product.image}
                             alt={product.name}
                             fill
+                            loading="lazy"
                             className="object-contain"
                         />
                     </div>
