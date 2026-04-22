@@ -169,35 +169,35 @@ export const Navbar = () => {
 
                                 <div className="flex flex-col text-sm">
 
-                                    <Link href="/" onClick={close} className="px-4 py-3 border-b hover:bg-gray-100">
+                                    <Link href="/" onClick={() => close()} className="px-4 py-3 border-b hover:bg-gray-100">
                                         Главная
                                     </Link>
 
-                                    <Link href="/catalog" onClick={close} className="px-4 py-3 border-b hover:bg-gray-100">
+                                    <Link href="/catalog" onClick={() => close()} className="px-4 py-3 border-b hover:bg-gray-100">
                                         Каталог
                                     </Link>
 
                                     <div className="border-b">
                                         <p className="px-4 py-3 text-xs text-gray-500">О нас</p>
 
-                                        <Link href="/about" onClick={close} className="block px-6 py-2 hover:bg-gray-100">
+                                        <Link href="/about" onClick={() => close()} className="block px-6 py-2 hover:bg-gray-100">
                                             О компании
                                         </Link>
 
-                                        <Link href="/about/licenses" onClick={close} className="block px-6 py-2 hover:bg-gray-100">
+                                        <Link href="/about/licenses" onClick={() => close()} className="block px-6 py-2 hover:bg-gray-100">
                                             Лицензии
                                         </Link>
 
-                                        <Link href="/about/delivery" onClick={close} className="block px-6 py-2 hover:bg-gray-100">
+                                        <Link href="/about/delivery" onClick={() => close()} className="block px-6 py-2 hover:bg-gray-100">
                                             Доставка
                                         </Link>
                                     </div>
 
-                                    <Link href="/sklad" onClick={close} className="px-4 py-3 border-b hover:bg-gray-100">
+                                    <Link href="/sklad" onClick={() => close()} className="px-4 py-3 border-b hover:bg-gray-100">
                                         Склад
                                     </Link>
 
-                                    <Link href="/contacts" onClick={close} className="px-4 py-3 hover:bg-gray-100">
+                                    <Link href="/contacts" onClick={() => close()} className="px-4 py-3 hover:bg-gray-100">
                                         Контакты
                                     </Link>
 
