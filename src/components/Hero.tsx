@@ -21,14 +21,14 @@ export const Hero = () => {
                     {/* LEFT */}
                     <div className="flex flex-col gap-4">
                         <HeroCard
-                            title="Фундаментные блоки"
-                            tag="ФБС БЛОКИ"
-                            image="/img/fbs.png"
-                            link="/catalog/fbs"
+                            title="Перемычки"
+                            tag="Астана перемычки"
+                            image="/img/products/peremychki.png"
+                            link="/catalog/peremychki"
                         />
                         <HeroCard
                             title="Сваи ЖБИ"
-                            tag="ЖБ СВАИ"
+                            tag="Сваи Астана"
                             image="/img/products/svai.png"
                             link="/catalog/svai"
                         />
@@ -68,10 +68,10 @@ export const Hero = () => {
                     {/* RIGHT */}
                     <div className="flex flex-col gap-4">
                         <HeroCard
-                            title="Кольца колодцев"
-                            tag="КОЛЬЦА"
-                            image="/img/koltsa.png"
-                            link="/catalog/koltsa"
+                            title="Лестничные площадки"
+                            tag="Лестницы Астана"
+                            image="/img/products/lestnica.png"
+                            link="/catalog/plates"
                         />
                         <HeroCard
                             title="Доставка ЖБИ"

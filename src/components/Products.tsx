@@ -28,7 +28,7 @@ export default function Products() {
                 </div>
 
                 {/* GRID */}
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-5">
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5 min-h-[160px] md:min-h-[200px]">
 
                     {products.map((item) => (
                         <Link
@@ -54,12 +54,13 @@ export default function Products() {
                             </div>
 
                             {/* TITLE */}
-                            <p className="text-s md:text-base font-semibold group-hover:text-orange-500">
+                            <p className="text-[14px] md:text-base font-semibold group-hover:text-orange-500">
                                 {item.shortName}
                             </p>
-                            <div className="flex items-center gap-1 text-orange-500 text-xs mt-1 opacity-70 group-hover:opacity-100 transition">
+                            <div
+                                className="flex items-center gap-1 text-orange-500 text-xs mt-1 opacity-70 group-hover:opacity-100 transition">
                                 Подробнее
-                                <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition" />
+                                <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition"/>
                             </div>
 
                         </Link>

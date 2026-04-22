@@ -5,6 +5,7 @@ import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { PopupWidget } from "@/components/PopupWidget";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -65,7 +66,7 @@ export default function RootLayout({
       </main>
       <Footer />
       <PopupWidget />
-
+      <ScrollToTop />
       </body>
       </html>
   );

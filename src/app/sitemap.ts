@@ -3,7 +3,7 @@ import { products } from "@/lib/products";
 
 export default function sitemap(): MetadataRoute.Sitemap {
 
-    const baseUrl = "https://yourdomain.kz";
+    const baseUrl = "https://tsementsnab.kz";
 
     const staticPages = [
         "",
