@@ -13,6 +13,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
         "/about",
         "/about/licenses",
         "/about/delivery",
+        "/svai-astana",
+        "/plity-perekrytiya-astana",
+        "/peremychki-astana",
+        "/progony-astana",
+        "/lestnichnye-marshi-astana",
+        "/lestnichnye-ploshadki-astana",
+        "/fermy-zhbi-astana",
     ].map((route) => ({
         url: `${baseUrl}${route}`,
         lastModified: new Date(),
