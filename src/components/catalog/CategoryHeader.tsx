@@ -1,4 +1,5 @@
 import Image from "next/image";
+import {TrackedLink} from "@/components/TrackedLink";
 
 export default function CategoryHeader({ category }: any) {
     return (
@@ -29,20 +30,19 @@ export default function CategoryHeader({ category }: any) {
                 {/* 🔥 КНОПКИ ТУТ */}
                 <div className="flex gap-4 flex-wrap">
 
-                    <a
+                    <TrackedLink
                         href="https://wa.me/77089117554"
-                        target="_blank"
                         className="bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition"
                     >
                         Написать в WhatsApp
-                    </a>
+                    </TrackedLink>
 
-                    <a
+                    <TrackedLink
                         href="tel:+77089117554"
                         className="border px-6 py-3 rounded-lg hover:bg-gray-100 "
                     >
                         Позвонить
-                    </a>
+                    </TrackedLink>
 
                 </div>
 

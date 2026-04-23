@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import {usePathname} from "next/navigation";
 import AboutLayout from "@/components/AboutLayout";
+import {TrackedLink} from "@/components/TrackedLink";
 
 const menu = [
     "О компании",
@@ -67,13 +68,12 @@ export default function DeliveryPage() {
                                 </p>
 
                                 <div className="flex gap-3">
-                                    <a
+                                    <TrackedLink
                                         href="https://wa.me/77089117554"
-                                        target="_blank"
                                         className="bg-orange-500 text-white px-5 py-2 rounded-lg hover:bg-orange-600 transition"
                                     >
                                         Заказать доставку
-                                    </a>
+                                    </TrackedLink>
 
                                     <Link
                                         href="/catalog"

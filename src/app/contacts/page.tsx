@@ -1,3 +1,5 @@
+import {TrackedLink} from "@/components/TrackedLink";
+
 export default function ContactsPage() {
     return (
         <div className="bg-gray-100  min-h-screen">
@@ -28,9 +30,9 @@ export default function ContactsPage() {
 
                     <p>
                         <strong>Телефон:</strong>{" "}
-                        <a href="tel:+77089117554" className="text-orange-500">
+                        <TrackedLink href="tel:+77089117554" className="text-orange-500">
                             +7 708 911 75 54
-                        </a>
+                        </TrackedLink>
                     </p>
 
                     <p>
@@ -51,12 +53,12 @@ export default function ContactsPage() {
                     <p>
                         <strong>Режим работы:</strong> Пн–Пт: 09:00–18:00
                     </p>
-                    <a
+                    <TrackedLink
                         href="https://wa.me/77089117554"
                         className="inline-block mt-6 bg-orange-500 text-white px-6 py-3 rounded-lg"
                     >
                         Написать в WhatsApp
-                    </a>
+                    </TrackedLink>
                 </div>
 
             </div>

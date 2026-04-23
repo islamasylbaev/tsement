@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Disclosure } from "@headlessui/react";
 import { FaWhatsapp } from "react-icons/fa";
 import { useEffect, useState } from "react";
+import {TrackedLink} from "@/components/TrackedLink";
 
 export const Navbar = () => {
 
@@ -113,13 +114,12 @@ export const Navbar = () => {
                 {/* RIGHT */}
                 <div className="flex items-center gap-3 ml-auto">
 
-                    <a href="tel:+77089117554" className="hidden md:block font-semibold text-sm">
+                    <TrackedLink href="tel:+77089117554" className="hidden md:block font-semibold text-sm">
                         +7 708 911 75 54
-                    </a>
+                    </TrackedLink>
 
-                    <a
+                    <TrackedLink
                         href="https://wa.me/77089117554"
-                        target="_blank"
                         className="
                             flex items-center gap-2
                             bg-green-500 hover:bg-green-600
@@ -129,7 +129,7 @@ export const Navbar = () => {
                     >
                         <FaWhatsapp className="w-4 h-4" />
                         <span className="">WhatsApp</span>
-                    </a>
+                    </TrackedLink>
                 </div>
 
                 {/* MOBILE */}

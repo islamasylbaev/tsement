@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Container } from "@/components/Container";
 import { Phone, Mail, MapPin } from "lucide-react";
+import {TrackedLink} from "@/components/TrackedLink";
 
 export function Footer() {
   return (
@@ -61,9 +62,9 @@ export function Footer() {
 
                 <div className="flex items-center gap-2">
                   <Phone className="w-4 h-4 text-orange-500" />
-                  <a href="tel:+77089117554" className="hover:text-white">
+                  <TrackedLink href="tel:+77089117554" className="hover:text-white">
                     +7 708 911 75 54
-                  </a>
+                  </TrackedLink>
                 </div>
 
                 <div className="flex items-center gap-2">
@@ -93,13 +94,12 @@ export function Footer() {
                 Напишите нам в WhatsApp и получите консультацию
               </p>
 
-              <a
+              <TrackedLink
                   href="https://wa.me/77089117554"
-                  target="_blank"
                   className="inline-block bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded-lg transition text-sm"
               >
                 Написать в WhatsApp
-              </a>
+              </TrackedLink>
             </div>
 
           </div>

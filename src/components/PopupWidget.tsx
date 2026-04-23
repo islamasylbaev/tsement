@@ -3,6 +3,7 @@
 import { Disclosure, Transition } from "@headlessui/react";
 import { FaWhatsapp } from "react-icons/fa";
 import { Phone } from "lucide-react";
+import {TrackedLink} from "@/components/TrackedLink";
 
 export function PopupWidget() {
   return (
@@ -43,23 +44,22 @@ export function PopupWidget() {
                   <div className="fixed bottom-24 right-5 z-50 flex flex-col gap-3">
 
                     {/* WHATSAPP */}
-                    <a
+                      <TrackedLink
                         href="https://wa.me/77089117554"
-                        target="_blank"
                         className="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-xl shadow-lg"
                     >
                       <FaWhatsapp className="w-5 h-5" />
                       WhatsApp
-                    </a>
+                    </TrackedLink>
 
                     {/* PHONE */}
-                    <a
+                    <TrackedLink
                         href="tel:+77089117554"
                         className="flex items-center gap-2 bg-gray-900 hover:bg-black text-white px-4 py-3 rounded-xl shadow-lg"
                     >
                       <Phone className="w-5 h-5" />
                       Позвонить
-                    </a>
+                    </TrackedLink>
 
                   </div>
                 </Transition>

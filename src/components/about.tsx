@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { Container } from "@/components/Container";
 import {FaWhatsapp} from "react-icons/fa";
+import {TrackedLink} from "@/components/TrackedLink";
 
 const images = [
     "/img/1.jpg",
@@ -105,14 +106,13 @@ export default function About() {
                             {/* BUTTONS */}
                             <div className="flex gap-4">
 
-                                <a
+                                <TrackedLink
                                     href="https://wa.me/77089117554"
-                                    target="_blank"
                                     className="text-l flex items-center gap-2 bg-green-400 hover:bg-green-600 text-white px-3 py-1.5 text-sm rounded-lg"
                                 >
                                     <FaWhatsapp className="w-5 h-5 shrink-0"/>
                                     <span>WhatsApp</span>
-                                </a>
+                                </TrackedLink>
 
                                 <a
                                     href="/catalog"

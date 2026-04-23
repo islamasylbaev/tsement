@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import CatalogLayout from "@/components/catalog/CatalogLayout";
 import Link from "next/link";
 import Image from "next/image";
+import {TrackedLink} from "@/components/TrackedLink";
 
 export default function Page({ params }: any) {
     const product = products.find((p) => p.slug === params.slug);
@@ -111,21 +112,21 @@ export default function Page({ params }: any) {
 
                         <div className="flex flex-wrap gap-3">
 
-                            <a
+                            <TrackedLink
                                 href={`https://wa.me/77089117554?text=${encodeURIComponent(
                                     `Здравствуйте! Интересует ${product.name}`
                                 )}`}
                                 className="bg-orange-500 text-white px-4 md:px-5 py-2 rounded-lg text-sm md:text-base"
                             >
                                 Написать в WhatsApp
-                            </a>
+                            </TrackedLink>
 
-                            <a
+                            <TrackedLink
                                 href="tel:+77089117554"
                                 className="border px-4 md:px-5 py-2 rounded-lg text-sm md:text-base"
                             >
                                 Позвонить
-                            </a>
+                            </TrackedLink>
 
                         </div>
 

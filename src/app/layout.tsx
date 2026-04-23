@@ -34,39 +34,60 @@ export default function RootLayout({
   return (
       <html lang="ru">
       <body className={inter.className}>
-
-      {/* SEO schema */}
+      <head>
+          <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16743737334"></script>
+          <script
+              dangerouslySetInnerHTML={{
+                  __html: `
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+          'send_to': 'AW-16743737334/fLwSCN-0r94ZEPbPhLA-',
+          'value': 1.0,
+          'currency': 'USD',
+          'event_callback': callback
+        });
+        return false;
+      }
+    `,
+              }}
+          />
+      </head>
       <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "Цемент-Снаб НС",
-              url: "https://tsementsnab.kz",
-              logo: "https://tsementsnab.kz/logo.png",
-              description:
-                  "Производство и продажа ЖБИ изделий в Астане: сваи, ФБС блоки, плиты перекрытия.",
-              address: {
-                "@type": "PostalAddress",
-                addressLocality: "Астана",
-                addressCountry: "KZ",
-              },
-              contactPoint: {
-                "@type": "ContactPoint",
-                telephone: "+77089117554",
-                contactType: "customer service",
-              },
-            }),
+              __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "Organization",
+                  name: "Цемент-Снаб НС",
+                  url: "https://tsementsnab.kz",
+                  logo: "https://tsementsnab.kz/logo.png",
+                  description:
+                      "Производство и продажа ЖБИ изделий в Астане: сваи, ФБС блоки, плиты перекрытия.",
+                  address: {
+                      "@type": "PostalAddress",
+                      addressLocality: "Астана",
+                      addressCountry: "KZ",
+                  },
+                  contactPoint: {
+                      "@type": "ContactPoint",
+                      telephone: "+77089117554",
+                      contactType: "customer service",
+                  },
+              }),
           }}
       />
-      <Navbar />
+      <Navbar/>
       <main>
-        {children}
+          {children}
       </main>
-      <Footer />
-      <PopupWidget />
-      <ScrollToTop />
+      <Footer/>
+      <PopupWidget/>
+      <ScrollToTop/>
       </body>
       </html>
   );

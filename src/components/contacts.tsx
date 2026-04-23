@@ -1,6 +1,7 @@
 "use client";
 
 import { Container } from "@/components/Container";
+import {TrackedLink} from "@/components/TrackedLink";
 
 export default function Contacts() {
     return (
@@ -20,12 +21,12 @@ export default function Contacts() {
 
                             <div>
                                 <p className="text-gray-500 text-sm">Телефон</p>
-                                <a
+                                <TrackedLink
                                     href="tel:+77089117554"
                                     className="text-lg font-semibold text-gray-900 "
                                 >
                                     +7 708 911 75 54
-                                </a>
+                                </TrackedLink>
                             </div>
 
                             <div>
@@ -53,13 +54,12 @@ export default function Contacts() {
                             </div>
 
                             {/* BUTTON */}
-                            <a
+                            <TrackedLink
                                 href="https://wa.me/77089117554"
-                                target="_blank"
                                 className="inline-block bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition"
                             >
                                 Написать в WhatsApp
-                            </a>
+                            </TrackedLink >
 
                         </div>
 
